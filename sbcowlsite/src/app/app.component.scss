@@ -1,9 +1,14 @@
+.body{
+    font-size: 16px;
+}
+
 .logoContainer {
     height: 100vh;
     width: 100vw;
+
+
     background-color: black;
     text-align: center;
-
     .owlLogoImage{
         max-width:100%;
         max-height:100%;
@@ -11,65 +16,51 @@
 }
 
 .aboutMeContainer {
-    height: 100vh;
+    height: 640px;
     width: 100vw;
     background-color: #E4E4E4;
     display: flex;
+    flex-direction: column;
 
     .photoContainer{
-        height: 100%;
-        width: 50%;
+        height: 340px;
+        display: flex;
+        justify-content: center;
 
         .profileMainPhoto{
-            width: 100%;
-            height: 100%;
+            width: 235px;
             background-image: url('../assets/profilePhoto.png');
             background-size: contain;
             background-repeat: no-repeat; 
-            background-position: center center;
-        }
-
-        .profilePhotoTest{
-            max-width:100%;
-            height: 100%;
-            object-fit:fill;
+            background-position: center bottom;
         }
         
     }
 
     .rightContainer{
-        height: 100%;
-        width: 50%;
+        height: 300px;
 
         .textContainer{
-            height: 30%;
-            width: 100%;
+            height: 180px;
             display: flex;
             flex-direction: column;
 
             .firstParagraphText{
-                width: 100%;
-                height: 30%;
-                font-size: 1.3vw;
+                height: 55px;
                 display: flex;
                 align-items: flex-end;
                 font-family: 'Caladea', serif;
             }
 
             .nameText{
-                width: 100%;
-                height: 40%;
-                //TODO take a look in different resolutions this text
-                font-size: 3.8vw;
-                //font-size: 30px;
+                height: 70px;
+                font-size: 22px;
                 display: flex;
                 align-items: center;
                 font-family: 'Bree Serif', serif;
             }
             .secondParagraphText{
-                width: 100%;
-                height: 30%;
-                font-size: 1.3vw;
+                height: 55px;
                 display: flex;
                 align-items: flex-start;
                 font-family: 'Caladea', serif;
@@ -78,8 +69,7 @@
         }
 
         .buttonContainer{
-            height: 10%;
-            width: 100%;
+            height: 120px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -89,11 +79,10 @@
                 transition: all 0.5s;
                 background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(196,196,196,1) 100%);
                 border: 2px solid black;
-            
                 font-family: 'Caladea', serif;
-                font-size: 22px;
-                width: 160px;
-                height: 70px;
+                font-size: 16px;
+                width: 100px;
+                height: 42px;
             
                 &:hover{
                     color:white;
@@ -268,3 +257,15 @@
     background-image: url('../assets/gmailLogo.png');
 }
 
+
+@media (min-width: 640px){
+    .body{
+        font-size: 24px;
+    }
+}
+@media (min-width: 1025px){
+
+    .body{
+        font-size: 32px;
+    }
+}

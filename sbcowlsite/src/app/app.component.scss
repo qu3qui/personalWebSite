@@ -44,25 +44,24 @@
             height: 180px;
             display: flex;
             flex-direction: column;
+            align-items: center;
 
             .firstParagraphText{
+                text-align: center;
                 height: 55px;
-                display: flex;
-                align-items: flex-end;
                 font-family: 'Caladea', serif;
             }
 
             .nameText{
+                text-align: center;
                 height: 70px;
                 font-size: 22px;
-                display: flex;
-                align-items: center;
                 font-family: 'Bree Serif', serif;
             }
             .secondParagraphText{
+                width: 290px;
                 height: 55px;
-                display: flex;
-                align-items: flex-start;
+                text-align: justify;
                 font-family: 'Caladea', serif;
             }
 
@@ -149,25 +148,24 @@
 }
 
 .contactContainer {
-    height: 640px;
+
     background-color: #E4E4E4;
     display: flex;
     flex-direction: column;
 
     .titleContainer{
+        margin: 25px 0px;
         width: 100%;
-        height: 50px;
         display: flex;
         align-items: center;
         justify-content: center;
         font-family: 'Caladea', serif;
-        font-size: 2.5vw;
+        font-size: 34px;
 
     }
 
     .contentContainer{
         width: 100%;
-        height: 245px;
         display: flex;
         flex-direction: column;
 
@@ -179,34 +177,34 @@
             align-items: center;
 
             .firstParagraphText{
-                width: 100%;
-                display: flex;
-                justify-content: center;
+                width: 290px;
+                margin: 25px 0px;
+                text-align: center;
                 font-family: 'Caladea', serif;
             }
             
             .secondParagraphText{
-                width: 100%;
-                display: flex;
-                justify-content: center;
+                width: 290px;
+                margin: 25px 0px;
+                text-align: justify;
                 font-family: 'Caladea', serif;
             }
+
+
         }
 
         .profileImageContainer{
-            width: 50%;
-            height: 100%;
+            margin: 25px 0px;
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             align-items: center;
-            padding-right: 100px;
 
             .profileImage{
                 background-image: url('../assets/contactPhoto.jpg');
                 background-size: cover;
                 background-position: center center;
-                height: 200px;
-                width: 200px;
+                height: 180px;
+                width: 180px;
                 border-radius: 50%;
             }
 
@@ -214,16 +212,15 @@
 
     }
 
-    .socialMediaLogoContainer{
-        width: 100%;
-        height: 40px;
-        background-color: black;
-        display: flex;
-        justify-content: center;
+}
 
 
-
-    }
+.socialMediaLogoContainer{
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
 
 }
 

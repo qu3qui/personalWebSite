@@ -216,9 +216,6 @@
     }
 }
 
-
-
-
 .experienceContainer {
     height: 640px;
     background-color: black;
@@ -227,7 +224,7 @@
 
     .title{
         display: flex;
-        height: 10%;
+        height: 90px;
         justify-content: center;
         color: white;
         font-family: 'Caladea', serif;
@@ -236,7 +233,7 @@
     }
 
     .banner{
-        height: 90%;
+        height: 550px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -293,8 +290,20 @@
                     width: 450px;
                 }
             }
+        }
 
+    }
 
+}
+
+@media (min-width: 1025px){
+    .experienceContainer {
+        .title{
+            font-size: 50px;
+        }
+
+        .banner{
+            flex-direction: row;
         }
 
     }
@@ -303,116 +312,159 @@
 
 .contactContainer {
 
+    height: 480px;
     background-color: #E4E4E4;
     display: flex;
     flex-direction: column;
 
-    .titleContainer{
-        margin: 25px 0px;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Caladea', serif;
-        font-size: 34px;
-
-    }
-
     .contentContainer{
+
+        height: 220px;
         width: 100%;
         display: flex;
         flex-direction: column;
 
+        .titleContainer{
+
+            height: 100px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Caladea', serif;
+            font-size: 34px;
+        }
+
         .textContainer{
-            height: 100%;
+            height: 120px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
 
             .firstParagraphText{
+                height: 20px;
                 width: 290px;
-                margin: 25px 0px;
                 text-align: center;
                 font-family: 'Caladea', serif;
             }
             
             .secondParagraphText{
+                height: 65px;
                 width: 290px;
-                margin: 25px 0px;
                 text-align: justify;
                 font-family: 'Caladea', serif;
             }
 
-
         }
+    }
 
-        .profileImageContainer{
-            margin: 25px 0px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    .profileImageContainer{
+        height: 260px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-            .profileImage{
-                background-image: url('../assets/contactPhoto.jpg');
-                background-size: cover;
-                background-position: center center;
-                height: 180px;
-                width: 180px;
-                border-radius: 50%;
-            }
-
+        .profileImage{
+            background-image: url('../assets/contactPhoto.jpg');
+            background-size: cover;
+            background-position: center center;
+            height: 180px;
+            width: 180px;
+            border-radius: 50%;
         }
-
     }
 
 }
 
 @media (min-width: 640px){
     .contactContainer {
-        height: 815px;
-
-        .titleContainer{
-            height: 130px;
-            font-size: 42px;    
-        }
-
+        height: 670px;
 
         .contentContainer{
-            height: 685px;
+            height: 240px;
+
+            .titleContainer{
+                height: 120px;
+                font-size: 42px;    
+            }
     
             .textContainer{
-                height: 195px;
+                height: 120px;
                 font-size: 24px;
 
                 .firstParagraphText{
                     width: 580px;
-                    margin: 25px 0px;
                 }
 
                 .secondParagraphText{
                     width: 580px;
-                    margin: 25px 0px;
                 }
-    
-    
             }
-    
-            .profileImageContainer{
-                height: 490px;
+        }
 
-                .profileImage{
-                    height: 380px;
-                    width: 380px;
-                }
-    
+        .profileImageContainer{
+            height: 430px;
+
+            .profileImage{
+                height: 340px;
+                width: 340px;
+            }
+
+        }
+    }
+
+}
+
+@media (min-width: 1025px){
+    .contactContainer {
+        height: 380px;
+
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+
+        .contentContainer{
+            height: 250px;
+            width: 625px;
+
+            .titleContainer{
+                height: 40px;
+                font-size: 50px;
+                margin-bottom: 40px;  
             }
     
+            .textContainer{
+                height: 120px;
+                font-size: 24px;
+
+                .firstParagraphText{
+                    width: 580px;
+                }
+
+                .secondParagraphText{
+                    width: 580px;
+                }
+            }
+        }
+
+        .profileImageContainer{
+            height: 250px;
+            width: 400px;
+
+            .profileImage{
+                height: 250px;
+                width: 250px;
+            }
+
         }
 
     }
 }
 
+
+//Todo work on social media
 
 .socialMediaLogoContainer{
     width: 100%;
@@ -462,13 +514,27 @@
 
 @media (min-width: 640px){
     .socialMediaLogoContainer{
-        height: 76px;
+        height: 66px;
 
         .socialMediaLogo{
 
-            height: 60px;
-            width: 60px;
+            height: 50px;
+            width: 50px;
             margin: 8px 20px;
+        }
+
+    }
+}
+
+@media (min-width: 1025px){
+    .socialMediaLogoContainer{
+        height: 46px;
+
+        .socialMediaLogo{
+
+            height: 40px;
+            width: 40px;
+            margin: 3px 20px;
         }
 
     }

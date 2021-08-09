@@ -254,100 +254,6 @@
     }
 }
 
-.experienceContainer {
-    height: 640px;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-
-    .title{
-        display: flex;
-        height: 90px;
-        justify-content: center;
-        color: white;
-        font-family: 'Caladea', serif;
-        font-size: 34px;
-        align-items: center;
-    }
-
-    .banner{
-        height: 550px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-
-        .experienceContainer{
-            height: 50%;
-            width: 100%;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-            .experienceImage{
-                margin: 10px;
-                height: 250px;
-                width: 250px;
-                background-size: contain;
-                background-repeat: no-repeat; 
-                background-position: center bottom;
-
-                &.talos{
-                    background-image: url('../assets/talosLogo.jpg');
-                }
-
-                &.heinsohn{
-                    background-image: url('../assets/heinsohnLogo.png');
-                }
-               
-            }
-        }
-
-    }
-}
-
-@media (min-width: 640px){
-    .experienceContainer {
-        height: 1024px;
-
-        .title{
-            height: 184px;         
-            font-size: 42px;
-        }
-
-        .banner{
-            height: 840px;
-            
-            .experienceContainer{
-                height: 50%;
-                width: 100%;
-                .experienceImage{
-                    margin: 10px;
-                    height: 450px;
-                    width: 450px;
-                }
-            }
-        }
-
-    }
-
-}
-
-@media (min-width: 1025px){
-    .experienceContainer {
-        .title{
-            font-size: 50px;
-        }
-
-        .banner{
-            flex-direction: row;
-        }
-
-    }
-
-}
-
 .contactContainer {
 
     height: 480px;
@@ -576,4 +482,8 @@
         }
 
     }
+}
+
+.hidden{
+    display: none;
 }

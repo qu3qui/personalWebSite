@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
 
   title = 'sbcowlsite';
+  isHidden: boolean = true;
+  talosExperienceIsDisplayed = false;
+
+  constructor(private render:Renderer2) {
+
+  }
 
   ngOnInit(): void {
 
@@ -32,4 +39,10 @@ export class AppComponent implements OnInit {
     let target = document.querySelector('#observerTest');
     observer.observe(target);
   } 
+
+  close($event): void{
+    $event.target.parent();
+
+  }
+
 }

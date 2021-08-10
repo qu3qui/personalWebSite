@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-experience',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./experience.component.scss']
 })
 export class ExperienceComponent implements OnInit {
+
+  
 
   talosExperienceIsDisplayed = false;
 
@@ -24,6 +27,11 @@ export class ExperienceComponent implements OnInit {
 
   getjaja(){
     return this.talosExperienceIsDisplayed ? "displayContentAnimated" : "hideContentAnimated"
+  }
+
+  addItem(event){
+    this.talosExperienceIsDisplayed = event;
+    console.log(this.talosExperienceIsDisplayed);
   }
 
 }

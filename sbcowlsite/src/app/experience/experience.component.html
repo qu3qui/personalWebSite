@@ -1,26 +1,30 @@
 <div class="experienceContainer">
 
-  <!-- Talos Experience -->
+  <!-- Talos Experience detailed -->
   <div
     [ngClass]="['talosExperienceContainer', talosExperienceIsDisplayed ? 'displayContentAnimated' : 'hideContentAnimated']">
-    <app-experience-details (newItemEvent)="addItem($event)"></app-experience-details>
+    <app-experience-details [experienceToDisplay]="talosConstant" (displayTalosExperienceEvent)="displayTalosExperience($event)"></app-experience-details>
   </div>
 
+  <!-- Talos Experience detailed -->
+  <div
+    [ngClass]="['talosExperienceContainer', heinsohnExperienceIsDisplayed ? 'displayContentAnimated' : 'hideContentAnimated']">
+    <app-experience-details [experienceToDisplay]="heinsohnConstant" (displayHeinsohnExperienceEvent)="displayHeinsohnExperience($event)"></app-experience-details>
+  </div>
 
   <p class="title">Experiencia</p>
+
   <div class="banner">
 
     <div class="experienceContainer">
-      <div (click)="displayTalosExperience()" class="experienceImage talos">
+      <div (click)="displayTalosExperience(true)" class="experienceImage talos">
       </div>
     </div>
 
     <div class="experienceContainer">
-      <div class="experienceImage heinsohn">
+      <div (click)="displayHeinsohnExperience(true)" class="experienceImage heinsohn">
       </div>
     </div>
 
   </div>
 </div>
-
-<!-- Heinsohn Experience -->

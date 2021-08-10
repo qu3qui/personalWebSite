@@ -3,33 +3,37 @@
         <span (click)="close()" class="experience-details-close-button material-icons">cancel</span>
     </div>
 
-    <div class="experience-details-logo talos">
+    <div class="experience-details-logo-container">
+        <div [ngClass]="['experience-details-logo', experienceToDisplay === 'TALOS' ? 'talos' : 'heinsohn']">
+        </div>
     </div>
 
     <div class="experience-details-description">
         <p class="experience-details-description-main">
-            He trabajado con SAP Commerce la cual es una plataforma de comercio electronico para grandes
-            empresas, dicha plataforma usa para el backend el lenguaje Java y Spring como framework, por el lado del
-            front hace uso de un framework llamado spartacus que esta soportado sobre Angular Framework.
+            {{mainDescription}}
         </p>
 
-        <p>Proyectos en los cuales trabaje:</p>
+        <p>{{projectsDescription}}</p>
 
-        <ul>
-            <li>Nikon</li>
-            <li>HillRoom</li>
-            <li>Barnes and Noble</li>
+        <ul *ngFor="let project of projects">
+            <li>{{project}}</li>
         </ul>
 
-        <p>Tiempo en la empresa : 2 años</p>
+        <p>{{timeDescription}}</p>
 
     </div>
 
     <div class="experience-details-decorator">
 
-        <hr>
-              <span class="material-icons">star</span>
-        <hr>
+        <div class="experience-details-decorator-line">
+        </div>
+
+        <div class="experience-details-decorator-logo">
+            <span class="material-icons">star</span>
+        </div>
+
+        <div class="experience-details-decorator-line">
+        </div>
 
     </div>
 

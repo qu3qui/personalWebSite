@@ -14,26 +14,41 @@
         }
     }
 
-    .experience-details-logo{
+    .experience-details-logo-container{
         margin: 0px 30px 30px 30px;
-        width: 315px;
+        width: 314px;
         height: 180px;
-        background-size: cover;
-        background-repeat: no-repeat; 
-        background-position: center center;
+        background-color: black;
+        display: flex;
+        align-items: center;
 
-        &.talos{
-            background-image: url('../../assets/talosLogo.jpg');
+        .experience-details-logo{
+            
+            width: 314px;
+            height: 180px;
+
+            background-repeat: no-repeat; 
+            background-position: center center;
+            background-color: black;
+
+            &.talos{
+                background-image: url('../../assets/talosLogo.jpg');
+                background-size: cover;
+            }
+        
+            &.heinsohn{
+                background-size: contain;
+                background-image: url('../../assets/heinsohnLogo.png');
+                height: 160px;
+            }
         }
-    
-        &.heinsohn{
-            background-image: url('../../assets/heinsohnLogo.png');
-        }
+
+       
     }
 
     .experience-details-description{
-        width: 310px;
-        height: 310px;
+        width: 314px;
+        height: 350px;
         font-family: 'Caladea', serif;
         font-size: 16px;
 
@@ -43,18 +58,31 @@
     }
 
     .experience-details-decorator{
+
         display: flex;
         flex-direction: row;
-        width: calc(100% - 30px);
-        margin: 30px;
+
+        width: 314px;
+        margin: 10px;
         justify-content: center;
         text-align: center;
-        hr{
-            border: none;
-            background-color: black;
-            color: black;
-            height: 1px;
-            width: calc(50% - 42px) ;
+        height: 42px;
+
+        .experience-details-decorator-line{
+            width: 136px;
+            height: 50%;
+            border-bottom: 2px solid black;
+        }
+
+        .experience-details-decorator-logo{
+            width: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .material-icons{
+                font-size: 42px;
+            }
         }
     }
 }
@@ -72,21 +100,29 @@
         }
 
     
-        .experience-details-logo{
+        .experience-details-logo-container{
             margin: 0px 45px 45px 45px;
             width: 660px;
             height: 360px;
+
+            .experience-details-logo{
+                width: 660px;
+                height: 340px;
+            }
         }
     
         .experience-details-description{
             width: 660px;
-            height: 390px;
+            height: 450px;
             font-size: 24px;
         }
-    
+
         .experience-details-decorator{
-            width: calc(100% - 45px);
-            margin: 45px;
+            width: 660px;
+            margin-top: 20px;
+            .experience-details-decorator-line{
+                width: 309px;
+            }
         }
     }
 
@@ -102,24 +138,48 @@
                 font-size: 50px;                
             }
         }
-        .experience-details-logo{
+
+        .experience-details-logo-container{
             margin: 0px 50px 50px 50px;
-            width: 1280px;
+            margin: 0px 45px 45px 45px;
+            width: 1022px;
             height: 290px;
+
             background-size: auto;
-            background-color: black;
+
+            .experience-details-logo{
+                width: 1022px;
+                height: 270px;
+
+                &.talos{
+                    background-size: contain;
+                }
+            }
         }
     
         .experience-details-description{
-            width: 1280px;
-            height: 430px;
+            width: 1022px;
+            height: 520px;
             font-size: 30px;
         }
-    
+
+        
         .experience-details-decorator{
-            width: calc(100% - 50px);
-            margin: 50px;
+            width: 1022px;
+            height: 82px;
+
+            .experience-details-decorator-line{
+                width: 470px;
+            }
+    
+            .experience-details-decorator-logo{
+                width: 82px;
+                .material-icons{
+                    font-size: 82px;
+                }
+            }
         }
+    
     }
 
 }

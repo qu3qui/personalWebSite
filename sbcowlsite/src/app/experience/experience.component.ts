@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Output, EventEmitter } from '@angular/core';
+import { GlobalConstants } from '../common/global-constants';
 
 @Component({
   selector: 'app-experience',
@@ -8,30 +9,23 @@ import { Output, EventEmitter } from '@angular/core';
 })
 export class ExperienceComponent implements OnInit {
 
-  
+  talosConstant = GlobalConstants.talosCompany;
+  heinsohnConstant = GlobalConstants.heinsohnCompany;
 
   talosExperienceIsDisplayed = false;
+  heinsohnExperienceIsDisplayed = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  displayTalosExperience(): void{
-    this.talosExperienceIsDisplayed = true;
+  displayTalosExperience(display:boolean): void{
+    this.talosExperienceIsDisplayed = display;
   }
 
-  hideTalosExperience(): void{
-    this.talosExperienceIsDisplayed = false;
-  }
-
-  getjaja(){
-    return this.talosExperienceIsDisplayed ? "displayContentAnimated" : "hideContentAnimated"
-  }
-
-  addItem(event){
-    this.talosExperienceIsDisplayed = event;
-    console.log(this.talosExperienceIsDisplayed);
+  displayHeinsohnExperience(display:boolean): void{
+    this.heinsohnExperienceIsDisplayed = display;
   }
 
 }

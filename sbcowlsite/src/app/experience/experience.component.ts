@@ -22,10 +22,14 @@ export class ExperienceComponent implements OnInit {
 
   displayTalosExperience(display:boolean): void{
     this.talosExperienceIsDisplayed = display;
+    const element = document.querySelector(".experience-details-container.talos");
+    element.scrollIntoView(true);
   }
 
   displayHeinsohnExperience(display:boolean): void{
     this.heinsohnExperienceIsDisplayed = display;
+    const element = document.querySelector(".experience-details-container.heinsohn");
+    element.scrollIntoView(true);
   }
 
 }

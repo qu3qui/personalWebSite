@@ -1,4 +1,4 @@
-<div class="experience-details-container">
+<div [ngClass]="['experience-details-container', experienceToDisplay === 'TALOS' ? 'talos' : 'heinsohn']">
     <div class="experience-details-close-container">
         <span (click)="close()" class="experience-details-close-button material-icons">cancel</span>
     </div>

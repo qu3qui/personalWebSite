@@ -33,38 +33,10 @@
       }
 
       .firstParagraphText {
-        -webkit-animation-duration: 2s;
-        animation-duration: 2s;
         text-align: center;
         height: 55px;
         font-family: "Caladea", serif;
-      }
-
-      @-webkit-keyframes fadeInRight {
-        0% {
-          opacity: 0;
-          -webkit-transform: translateX(10px);
-        }
-        100% {
-          opacity: 1;
-          -webkit-transform: translateX(0);
-        }
-      }
-
-      @keyframes fadeInRight {
-        0% {
-          opacity: 0;
-          transform: translateX(10px);
-        }
-        100% {
-          opacity: 1;
-          transform: translateX(0);
-        }
-      }
-
-      .fadeInRight {
-        -webkit-animation-name: fadeInRight;
-        animation-name: fadeInRight;
+        animation-duration: 2s;
       }
 
       .nameText {
@@ -72,12 +44,14 @@
         height: 70px;
         font-size: 22px;
         font-family: "Bree Serif", serif;
+        animation-duration: 2s;
       }
       .secondParagraphText {
         width: 290px;
         height: 55px;
         text-align: justify;
         font-family: "Caladea", serif;
+        animation-duration: 2s;
       }
     }
 
@@ -222,15 +196,25 @@
         right: 0;
 
         .about-me-details-description {
-          width: 760px;
+          width: 760px;          
 
-          .experience-details-description-title {
+          .about-me-details-close-container { 
+            margin-top: 52px;
+            height: 30px;
+            .about-me-details-close-button {
+              width: 30px;
+              font-size: 30px;
+            }
+          }
+
+          .about-me-details-description-title {
+            margin-top: 0px;
             text-align: center;
             font-size: 52px;
             font-family: "Bree Serif", serif;
           }
 
-          .experience-details-description-text {
+          .about-me-details-description-text {
             text-align: justify;
             font-size: 25px;
           }
@@ -278,4 +262,19 @@
       }
     }
   }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
 }

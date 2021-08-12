@@ -18,6 +18,8 @@
 .contactContainer {
 
     height: 480px;
+    width: 100vw;
+
     background-color: #E4E4E4;
     display: flex;
     flex-direction: column;
@@ -168,11 +170,8 @@
     }
 }
 
-
-//Todo work on social media
-
 .socialMediaLogoContainer{
-    width: 100%;
+    width: 100vw;
     height: 40px;
     background-color: black;
     display: flex;

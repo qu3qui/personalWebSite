@@ -1,0 +1,68 @@
+<div class="aboutMeContainer">
+
+    <div class="rightContainer">
+
+        <!-- About me detailed -->
+        <div [ngClass]="['aboutMeDetailsContainer', aboutMeDetailsIsDisplayed ? 'displayContentAnimated' : 'hideContentAnimated']">
+
+            <div class="about-me-details-description">
+                <p class="experience-details-description-title">
+                    <strong>ABOUT</strong>
+                </p>
+
+                <p class="experience-details-description-text">
+                    Siempre he sido un amante de las tecnologías, fuese para aprender, crear o entretenerme, desde
+                    niño siempre les había tenido un gran aprecio, es por esto que decidí en el colegio investigar
+                    un poco más y finalmente decido estudiar una carrera afín a las tecnologías de información.
+                </p>
+
+                <p class="experience-details-description-text">
+                    Soy una persona que disfruta mucho del aprendizaje continuo, es por esto que nunca me cierro a
+                    solo una tecnología, he incursionado en temas transversales al desarrollo de software como
+                    DevOps, testing e incluso finanzas y administración de proyectos.
+                </p>
+
+                <p class="experience-details-description-text">
+                    El principal lenguaje en el que he trabajado es JAVA, sin embargo conozco C# y el framework .Net
+                    debido a un curso intensivo sobre el mismo y a la realización de ciertos trabajos a nivel
+                    profesional con el mismo. También conozco Javascript y el framework con el que más he tenido
+                    contacto es Angular, desde sus inicios con Angularjs hasta las versiones actuales.
+                </p>
+
+            </div>
+
+            <div class="about-me-details-decorator">
+
+                <div class="about-me-details-decorator-line">
+                </div>
+
+                <div class="about-me-details-decorator-logo">
+                    <span class="material-icons">star</span>
+                </div>
+
+                <div class="about-me-details-decorator-line">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="textContainer">
+            <p id="observerTest" class="firstParagraphText hidden">Hola, me llamo</p>
+            <p class="nameText"> <strong>SEBASTIAN BUITRAGO</strong></p>
+            <p class="secondParagraphText">Soy un apasionado del desarrollo de software y las tecnologias, amante de
+                videojuegos y aprendiz continuo de la lógica.</p>
+        </div>
+
+        <div class="buttonContainer">
+            <button (click)="displayAboutMeDetails(true)" class="button3">Saber mas</button>
+        </div>
+
+
+    </div>
+
+    <div class="photoContainer">
+        <div class="profileMainPhoto"></div>
+    </div>
+
+</div>
